@@ -13,6 +13,15 @@ body {
   background-color: #141218;
 }
 
+#cardSidebar:hover {
+  background-color: #1E1F22;
+  transition: ease-in-out .1s;
+}
+
+#questions {
+  color: #00CEBE;
+}
+
 #messageContainer {
   /* max-height: 400px; */
   overflow-y: auto;
