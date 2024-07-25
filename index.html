@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Service Desk ChatGPT</title>
+</head>
+<body>
+    <main class="flex h-screen">
+        <!-- Sidebar -->
+        <div class="w-1/4 p-4" style="background-color: #202123;">
+            <h2 class="text-xl font-bold mb-4">📋 Perguntas Frequentes</h2>
+            <ul class="space-y-2">
+                <li class="bg-gray-700 p-2 rounded cursor-pointer">Devo sentar rebolandinho?</li>
+                <li class="bg-gray-700 p-2 rounded cursor-pointer">Será que quero telete quente?</li>
+                <li class="bg-gray-700 p-2 rounded cursor-pointer">Dança no tiktok como fazer?</li>
+                <li class="bg-gray-700 p-2 rounded cursor-pointer">É verdade que todo paulista é ladrão?</li>
+                <li class="bg-gray-700 p-2 rounded cursor-pointer">Vai ter revoada na casa do Lucas?</li>
+                <li class="bg-gray-700 p-2 rounded cursor-pointer">Quem não gosta de pizza não é gente?</li>
+                <li class="bg-gray-700 p-2 rounded cursor-pointer">Por que Java é a melhor linguagem?</li>
+            </ul>
+        </div>
+        <section id="chatSection" class="w-3/4 flex p-10">
+            <div id="chatContainer" class="w-full flex flex-col justify-end center h-full">
+                <div id="messageContainer" class="w-full h-screen bg-green-600 mb-2.5"></div>
+                <div class="flex items-center mt-4 w-full">
+                    <input type="text" id="userInput" class="flex-grow p-2 rounded bg-gray-700 text-white" placeholder="Digite sua pergunta">
+                    <button class="ml-2 px-4 py-2 bg-green-600 text-white rounded" onclick="addUserMessage()">Enviar</button>
+                </div>
+            </div>
+        </section>
+        <section id="loading" style="display: none;">
+            <p>Carregando...</p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
