@@ -25,9 +25,9 @@
         <section id="chatSection" class="w-3/4 flex p-10">
             <div id="chatContainer" class="w-full flex flex-col justify-end center h-full">
                 <div id="messageContainer" class="w-full h-screen bg-green-600 mb-2.5"></div>
-                <div class="flex items-center mt-4 w-full">
-                    <input type="text" id="userInput" class="flex-grow p-2 rounded bg-gray-700 text-white" placeholder="Digite sua pergunta">
-                    <button class="ml-2 px-4 py-2 bg-green-600 text-white rounded" onclick="addUserMessage()">Enviar</button>
+                <div class="flex items-center mt-4 w-full p-2 rounded bg-gray-700">
+                    <input type="text" id="userInput" class="flex-grow text-white ml-5 bg-transparent focus:outline-none" placeholder="Digite sua pergunta">
+                    <img class="ml-1.5 p-4 bg-green-600 rounded h-full" src="./assets/icons/send.svg" alt="Icon" width="50" height="50" onclick="() => console.log(`Gabriel senta rebolandinho?`)">
                 </div>
             </div>
         </section>
@@ -35,6 +35,6 @@
             <p>Carregando...</p>
         </section>
     </main>
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
 </body>
 </html>
