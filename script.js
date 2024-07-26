@@ -1,3 +1,18 @@
+const toggleSidebar = () => {
+    const sidebar = document.getElementById('sidebar')
+    const chatSection = document.getElementById('chatSection')
+
+    if (sidebar.classList.contains('hidden')) {
+        sidebar.classList.remove('hidden')
+        sidebar.classList.add('fullscreen')
+        chatSection.classList.add('hidden')
+    } else {
+        sidebar.classList.add('hidden')
+        sidebar.classList.remove('fullscreen')
+        chatSection.classList.remove('hidden')
+    }
+}
+
 const sendPrompt = async () => {
     const userInput = document.getElementById('userInput').value
     const messageContainer = document.getElementById('messageContainer')
