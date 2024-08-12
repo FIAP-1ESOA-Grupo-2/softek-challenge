@@ -6,11 +6,9 @@ const toggleSidebar = () => {
 
     if (sidebar.classList.contains('hidden')) {
         sidebar.classList.remove('hidden')
-        sidebar.classList.add('fullscreen')
         chatSection.classList.add('hidden')
     } else {
         sidebar.classList.add('hidden')
-        sidebar.classList.remove('fullscreen')
         chatSection.classList.remove('hidden')
     }
 }
@@ -88,5 +86,4 @@ const sendPrompt = async () => {
 const handleClickQuestion = (problem) => {
     document.getElementById('userInput').value = problem
     sendPrompt()
-    toggleSidebar()
 }
