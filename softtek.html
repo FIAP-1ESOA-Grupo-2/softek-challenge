@@ -4,24 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Sobre a Softtek - Service Desk GEMINI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        #linear-gradient {
+            background: linear-gradient(to bottom, #141218, #2B292F);
+        }
+    </style>
 </head>
 
-<body class="bg-gray-900 text-gray-300">
+<body class="min-h-screen" id="linear-gradient">
     <!-- Header -->
-    <header class="flex justify-between items-center px-36 py-6 bg-gray-800">
-        <a href="/">
-            <img src="./assets/icons/biglogo.svg" alt="Logo Softtex" class="h-12">
-        </a>
-        <nav>
-            <ul class="flex space-x-6">
-                <li><a href="/" class="text-gray-400 hover:text-green-500">Início</a></li>
-                <li><a href="/privacidade.html" class="text-gray-400 hover:text-green-500">Política de Privacidade</a>
-                </li>
-                <li><a href="/softtek.html" class="text-gray-400 hover:text-green-500">Sobre</a></li>
-            </ul>
-        </nav>
+    <header class="hidden xl:block flex justify-center items-center h-[65px] border-b-[1px] border-[#FFFFFF14]">
+        <ul class="flex gap-20 text-[#C9C9C9] text-xl font-medium h-full justify-center items-center">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="help-desk.html">Service Desk</a></li>
+            <li><a href="about-project.html">Sobre o Projeto</a></li>
+            <li><a href="privacypolicy.html">Privacidade</a></li>
+            <li><a href="softtek.html">Sobre a softtek</a></li>
+        </ul>
+        <img src="./assets/icons/biglogo.svg" alt="Logo softtek" class="w-[70px] h-[40px] absolute top-3 end-5">
     </header>
 
     <!-- Main Content -->
@@ -74,7 +81,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-gray-400 text-center py-6">
+    <footer class="bg-[#141218] text-[#C9C9C9] text-center py-6">
         <p>&copy; 2024 Service Desk GEMINI. Todos os direitos reservados.</p>
     </footer>
 </body>
