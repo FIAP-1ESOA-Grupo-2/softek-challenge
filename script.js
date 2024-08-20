@@ -8,7 +8,7 @@ let softtekData;
 fetch('data.json')
     .then(response => response.json())
     .then(data => {
-        softtekData = data.softtekData;
+        softtekData = JSON.stringify(data.softtekData);
     })
     .catch(error => console.error('Error:', error));
 
