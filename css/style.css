@@ -30,7 +30,7 @@ body {
 .dot {
   width: 16px;
   height: 16px;
-  background-color: #00CEBE;
+  background-color: #78C0E0;
   border-radius: 50%;
   animation: bounce 1.5s infinite ease-in-out;
   position: relative;
@@ -74,7 +74,7 @@ body {
 } 
 
 #questions {
-  color: #00CEBE;
+  color: #78C0E0;
 } 
 
 .question:hover {
@@ -112,8 +112,13 @@ b {
   text-align: center;
   padding: 20px;
 }
+
+.bgsend {
+  background-color: #1a89b9;
+}
+
 .user-message {
-  background-color: #00CEBE; 
+  background-color: #78C0E0; 
   color: #353535;
   padding: 10px 30px; 
   font-weight: 600;

@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <title>Service Desk GEMINI</title>
 </head>
 
 <body>
-    <a href="/" title="Mais informações">
-        <img src="./assets/icons/biglogo.svg" alt="Logo Softtex" class="fixed right-5 top-5">
+    <a href="../index.html" title="Mais informações">
+        <img src="../assets/icons/biglogo.svg" alt="Logo Softtex" class="fixed right-5 top-5">
     </a>
-    <img src="./assets/icons/menu.svg" alt="Icone Menu" class="lg:hidden fixed left-10 top-10" height="30" width="30"
+    <img src="../assets/icons/menu.svg" alt="Icone Menu" class="lg:hidden fixed left-10 top-10" height="30" width="30"
         onclick="toggleSidebar()">
 
     <main class="flex h-screen">
@@ -24,14 +24,14 @@
                 <div class="flex justify-between items-center p-2 rounded-md" style="background-color: #1E1F22;">
                     <h2 class="flex gap-2 text-xl font-semibold items-center" id="questions"><span
                             class="text-2xl">?</span> Perguntas Frequentes</h2>
-                    <p class="font-semibold text-lg px-2 rounded-lg" style="background-color: #1A3939; color: #00CEBE;">
+                    <p class="font-semibold text-lg px-2 rounded-lg" style="background-color: #1A3939; color: #78C0E0;">
                         8</p>
                 </div>
             </div>
             <ul class="space-y-2 pt-8">
                 <li class="rounded-lg cursor-pointer flex gap-3 px-4 py-2 question"
                     onclick="handleClickQuestion('Lentidão de sistema')">
-                    <img src="./assets/icons/singlelogo.svg" alt="Logo Softtex" height="25" width="25">
+                    <img src="../assets/icons/singlelogo.svg" alt="Logo Softtex" height="25" width="25">
                     <div class="flex-1 flex flex-col gap-1">
                         <h2 class=" font-medium text-lg" style="color: #EEEEEE;">Lentidão de sistema</h2>
                         <p class="text-md font-normal" style="color: #ABABAB;">Verifique se há processos desnecessários
@@ -41,7 +41,7 @@
                 </li>
                 <li class="rounded-lg cursor-pointer flex gap-3 px-4 py-2 question"
                     onclick="handleClickQuestion('Impressora não imprime')">
-                    <img src="./assets/icons/singlelogo.svg" alt="Logo Softtex" height="25" width="25">
+                    <img src="../assets/icons/singlelogo.svg" alt="Logo Softtex" height="25" width="25">
                     <div class="flex-1 flex flex-col gap-1">
                         <h2 class="font-medium text-lg" style="color: #EEEEEE;">Impressora não imprime</h2>
                         <p class="text-md font-normal" style="color: #ABABAB;">Certifique-se de que a impressora esteja
@@ -51,7 +51,7 @@
                 </li>
                 <li class="rounded-lg cursor-pointer flex gap-3 px-4 py-2 question"
                     onclick="handleClickQuestion('Tela azul da morte (Windows)')">
-                    <img src="./assets/icons/singlelogo.svg" alt="Logo Softtex" height="25" width="25">
+                    <img src="../assets/icons/singlelogo.svg" alt="Logo Softtex" height="25" width="25">
                     <div class="flex-1 flex flex-col gap-1">
                         <h2 class="font-medium text-lg" style="color: #EEEEEE;">Tela azul da morte (Windows)</h2>
                         <p class="text-md font-normal" style="color: #ABABAB;">Tente reiniciar o computador. Se o
@@ -61,7 +61,7 @@
                 </li>
                 <li class="rounded-lg cursor-pointer flex gap-3 px-4 py-2 question"
                     onclick="handleClickQuestion('Software não abre')">
-                    <img src="./assets/icons/singlelogo.svg" alt="Logo Softtex" height="25" width="25">
+                    <img src="../assets/icons/singlelogo.svg" alt="Logo Softtex" height="25" width="25">
                     <div class="flex-1 flex flex-col gap-1">
                         <h2 class="font-medium text-lg" style="color: #EEEEEE;">Software não abre</h2>
                         <p class="text-md font-normal" style="color: #ABABAB;">Verifique se há atualizações disponíveis
@@ -71,7 +71,7 @@
                 </li>
                 <li class="rounded-lg cursor-pointer flex gap-3 px-4 py-2 question"
                     onclick="handleClickQuestion('Internet lenta')">
-                    <img src="./assets/icons/singlelogo.svg" alt="Logo Softtex" height="25" width="25">
+                    <img src="../assets/icons/singlelogo.svg" alt="Logo Softtex" height="25" width="25">
                     <div class="flex-1 flex flex-col gap-1">
                         <h2 class="font-medium text-lg" style="color: #EEEEEE;">Internet lenta</h2>
                         <p class="text-md font-normal" style="color: #ABABAB;">Verifique se o cabo de rede está
@@ -81,7 +81,7 @@
                 </li>
                 <li class="rounded-lg cursor-pointer flex gap-3 px-4 py-2 question"
                     onclick="handleClickQuestion('Arquivos corrompidos')">
-                    <img src="./assets/icons/singlelogo.svg" alt="Logo Softtex" height="25" width="25">
+                    <img src="../assets/icons/singlelogo.svg" alt="Logo Softtex" height="25" width="25">
                     <div class="flex-1 flex flex-col gap-1">
                         <h2 class="font-medium text-lg" style="color: #EEEEEE;">Arquivos corrompidos</h2>
                         <p class="text-md font-normal" style="color: #ABABAB;">Tente reiniciar o computador. Se o
@@ -92,7 +92,7 @@
                 </li>
                 <li class="rounded-lg cursor-pointer flex gap-3 px-4 py-2 question"
                     onclick="handleClickQuestion('Computador emite sons estranhos')">
-                    <img src="./assets/icons/singlelogo.svg" alt="Logo Softtex" height="25" width="25">
+                    <img src="../assets/icons/singlelogo.svg" alt="Logo Softtex" height="25" width="25">
                     <div class="flex-1 flex flex-col gap-1">
                         <h2 class="font-medium text-lg" style="color: #EEEEEE;">Computador emite sons estranhos</h2>
                         <p class="text-md font-normal" style="color: #ABABAB;">Os sons estranhos podem ser causados por
@@ -102,7 +102,7 @@
                 </li>
                 <li class="rounded-lg cursor-pointer flex gap-3 px-4 py-2 question"
                     onclick="handleClickQuestion('Antivirus detectou ameaça')">
-                    <img src="./assets/icons/singlelogo.svg" alt="Logo Softtex" height="25" width="25">
+                    <img src="../assets/icons/singlelogo.svg" alt="Logo Softtex" height="25" width="25">
                     <div class="flex-1 flex flex-col gap-1">
                         <h2 class="font-medium text-lg" style="color: #EEEEEE;">Antivirus detectou ameaça</h2>
                         <p class="text-md font-normal" style="color: #ABABAB;">Analise o arquivo ou programa sinalizado
@@ -122,7 +122,7 @@
                     <input type="text" id="userInput"
                         class="h-full flex-grow text-white pl-5 bg-transparent focus:outline-none"
                         placeholder="Digite sua pergunta" autocomplete="off">
-                    <img class="ml-1.5 p-4 bg-green-600 rounded-md h-full cursor-pointer" src="./assets/icons/send.svg"
+                    <img class="ml-1.5 p-4 bgsend rounded-md h-full cursor-pointer" src="../assets/icons/send.svg"
                         alt="Icon" width="50" height="50" onclick="sendPrompt()">
                 </div>
             </div>
@@ -135,7 +135,7 @@
             </div>
         </section>
     </main>
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
 </body>
 
 </html>

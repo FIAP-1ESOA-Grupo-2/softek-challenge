@@ -1,0 +1,40 @@
+* {
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+}
+#linear-gradient {
+  background: linear-gradient(to bottom, #141218, #2B292F);
+}
+/* SCROLL */
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(218, 218, 218, 0.144);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #78C0E0; 
+  border-radius: 10px;
+} 
+
+::selection {
+  color: #78C0E0;
+  background: #2B292F;
+}
+
+.headerbtn:hover {
+  color: #1195ce;
+  transition: 0.5s ease;
+  bottom: 5rem;
+}
+
+.btnvideo:hover {
+  scale: 1.1;
+  background-color: #fff;
+  transition: 0.6s cubic-bezier(0.22, 1.61, 0.36, 1);
+}
